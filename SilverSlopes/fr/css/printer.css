@@ -1,0 +1,14 @@
+#hire_ajax{
+        background:#ffcc66;
+        display: block;
+    }
+    #hire_ajax .kaushan-lg{
+        text-align:center;
+        font-family: "kaushan_script", "domine";
+        font-size: 2.5em;
+    }
+    #hire_ajax hr{
+    margin:10px;
+    border:2px solid #ff6363;
+}
+

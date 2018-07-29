@@ -1,0 +1,88 @@
+.hb-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 555;
+}
+
+.hb-modal .row {
+    margin: 0;
+    padding: 0;
+}
+
+.hb-modal p , .hb-modal h4{
+    color: #f50044;
+}
+
+.hb-modal-head,
+.hb-modal-foot {
+    padding: 10px;
+}
+.hb-modal hr{
+    margin:10px;
+    border-bottom:2px solid #ff6363;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.centered_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid #ddd;
+    background: #fff;
+    height: auto;
+    width: 70vw;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#ajax_modal, #ajax_modal .centered{
+    display:none;
+}
+#hire_ajax {
+    padding: 14px;
+}
+
+.hb-modal button {
+    outline:none;
+    border: 1px solid #f50044;
+    background: none;
+    color: #f50044;
+    border-radius: 25px;
+    padding: 5px 17px;
+    font-size:16px;
+    cursor:pointer;
+}
+.hb-modal button:hover {
+    background: #f50044;
+    color: #fff;
+}
+#printBtn{
+    border-color:#3CAF50;
+    margin:0 9px;
+    color:#3CAF50;
+}
+#printBtn:hover{
+    color:#fff;
+    background:#3CAF50;
+}
+#closeBtn{
+    margin:10px;
+    padding:5px 16px;
+    font-size:16px;
+}
+@media screen and (max-width:735px){
+    .centered_box {
+    width: 100vw;height:100vh;position:fixed;overflow:auto;
+}

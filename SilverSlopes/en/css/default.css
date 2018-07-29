@@ -1,0 +1,142 @@
+h1,
+h3,
+h5,
+h6,
+label {
+    color: #777777;
+}
+
+.section-gap {
+    padding: 50px;
+}
+
+.contain_progress {
+    width: 79%;
+    margin: auto;
+}
+
+.progressbar {
+    counter-reset: step;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 33.33%;
+    float: left;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+.progressbar li:before {
+    width: 50px;
+    height: 50px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 50px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 25px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressbar li:first-child:after {
+    content: none;
+}
+
+.progressbar li.active {
+    color: green;
+}
+
+.progressbar li.active:before {
+    border-color: #55b776;
+}
+
+.progressbar li.active + li:after {
+    background-color: #55b776;
+}
+
+.form_row {
+    padding: 0;
+    width: 80%;
+}
+
+form {
+    width: 100%;
+}
+
+.single-input,
+.single-textarea {
+    border: 1px solid #ddd;
+
+}
+
+.form-select .nice-select {
+    border: 1px solid #ddd;
+}
+
+.switch-wrap p {
+    margin: 0 10px;
+}
+
+form h5 {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .generic-banner .height {
+        height: 50vh;
+    }
+    #feature {
+        padding: 20px 0;
+    }
+
+}
+
+p.error{
+    color:red;
+}
+input.ng-invalid:not(.ng-untouched), textarea.ng-invalid:not(.ng-untouched){
+    border-color:red;
+    color:red;
+}
+input.ng-valid ,textarea.ng-valid{
+    border-color:#4CAF50;
+}
+button:disabled{
+background: #ADA996;
+cursor:not-allowed;
+}
+
+@media print {
+    .generic-banner,.feature-area .main-wrapper,footer{
+        display: none;}
+    #hire_ajax{
+        background:#ffcc66;
+        display: block;
+    }
+    #hire_ajax .kaushan-lg{
+        text-align:center;
+        font-family: "kaushan_script", "domine";
+        font-size: 2.5em;
+    }
+    #hire_ajax hr{
+    margin:10px;
+    border:2px solid #ff6363;
+}
+}
